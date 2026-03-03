@@ -105,13 +105,13 @@ export default function ProjectsPanel() {
 
             {/* Content */}
             <div style={{ padding: "20px 16px", flex: 1 }}>
-              <div style={{ color: "#444", fontSize: "9px", letterSpacing: "0.1em", marginBottom: "6px" }}>
+              <div style={{ color: "#555", fontSize: "11px", letterSpacing: "0.1em", marginBottom: "6px" }}>
                 {p.date}
               </div>
               <h3
                 style={{
                   color: "#fff",
-                  fontSize: "13px",
+                  fontSize: "15px",
                   fontWeight: "600",
                   marginBottom: "12px",
                   lineHeight: "1.3",
@@ -120,7 +120,7 @@ export default function ProjectsPanel() {
               >
                 {p.name}
               </h3>
-              <p style={{ color: "#666", fontSize: "11px", lineHeight: "1.7", marginBottom: "16px" }}>
+              <p style={{ color: "#777", fontSize: "13px", lineHeight: "1.7", marginBottom: "16px" }}>
                 {p.description}
               </p>
 
@@ -140,8 +140,8 @@ export default function ProjectsPanel() {
                     key={m.label}
                     style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}
                   >
-                    <span style={{ color: "#333", fontSize: "9px", letterSpacing: "0.1em" }}>{m.label}</span>
-                    <span style={{ color: "var(--orange)", fontSize: "11px", fontWeight: "600" }}>
+                    <span style={{ color: "#444", fontSize: "11px", letterSpacing: "0.1em" }}>{m.label}</span>
+                    <span style={{ color: "var(--orange)", fontSize: "13px", fontWeight: "600" }}>
                       {m.value}
                     </span>
                   </div>
@@ -154,10 +154,10 @@ export default function ProjectsPanel() {
                   <span
                     key={t}
                     style={{
-                      fontSize: "9px",
+                      fontSize: "11px",
                       padding: "2px 6px",
                       border: "1px solid #1c1c1c",
-                      color: "#444",
+                      color: "#555",
                       letterSpacing: "0.08em",
                     }}
                   >
@@ -175,8 +175,8 @@ export default function ProjectsPanel() {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: "#444",
-                    fontSize: "10px",
+                    color: "#555",
+                    fontSize: "12px",
                     textDecoration: "none",
                     letterSpacing: "0.08em",
                     display: "flex",
@@ -185,7 +185,7 @@ export default function ProjectsPanel() {
                     transition: "color 0.15s",
                   }}
                   onMouseEnter={(e) => ((e.currentTarget as HTMLAnchorElement).style.color = "var(--orange)")}
-                  onMouseLeave={(e) => ((e.currentTarget as HTMLAnchorElement).style.color = "#444")}
+                  onMouseLeave={(e) => ((e.currentTarget as HTMLAnchorElement).style.color = "#555")}
                 >
                   <span>→</span>
                   <span>VIEW ON GITHUB</span>

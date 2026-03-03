@@ -78,7 +78,7 @@ export default function AwardsPanel() {
                 paddingTop: "6px",
               }}
             >
-              <div style={{ color: a.color, fontSize: "18px", fontWeight: "700" }}>{a.rank}</div>
+              <div style={{ color: a.color, fontSize: "22px", fontWeight: "700" }}>{a.rank}</div>
             </div>
 
             <div>
@@ -102,13 +102,13 @@ export default function AwardsPanel() {
                   {a.type}
                 </span>
               </div>
-              <div style={{ color: "#d8d8d8", fontSize: "12px", fontWeight: "600", marginBottom: "4px" }}>
+              <div style={{ color: "#d8d8d8", fontSize: "14px", fontWeight: "600", marginBottom: "4px" }}>
                 {a.title}
               </div>
-              <div style={{ color: "#444", fontSize: "10px", marginBottom: "4px" }}>
+              <div style={{ color: "#555", fontSize: "12px", marginBottom: "4px" }}>
                 ISSUED BY: {a.issuer}
               </div>
-              <div style={{ color: "#555", fontSize: "10px", fontStyle: "italic" }}>{a.detail}</div>
+              <div style={{ color: "#666", fontSize: "12px", fontStyle: "italic" }}>{a.detail}</div>
             </div>
           </div>
         ))}
@@ -130,13 +130,13 @@ export default function AwardsPanel() {
               borderBottom: "1px solid #111",
             }}
           >
-            <div style={{ color: "#333", fontSize: "9px", marginBottom: "8px", letterSpacing: "0.1em" }}>
+            <div style={{ color: "#444", fontSize: "11px", marginBottom: "8px", letterSpacing: "0.1em" }}>
               ARTICLE {String(i + 1).padStart(2, "0")}
             </div>
-            <div style={{ color: "#fff", fontSize: "13px", fontWeight: "600", marginBottom: "8px", lineHeight: "1.3" }}>
+            <div style={{ color: "#fff", fontSize: "15px", fontWeight: "600", marginBottom: "8px", lineHeight: "1.3" }}>
               {a.title}
             </div>
-            <div style={{ color: "#555", fontSize: "11px", marginBottom: "14px", lineHeight: "1.6" }}>
+            <div style={{ color: "#666", fontSize: "13px", marginBottom: "14px", lineHeight: "1.6" }}>
               {a.subtitle}
             </div>
             <div style={{ display: "flex", gap: "4px" }}>
@@ -144,10 +144,10 @@ export default function AwardsPanel() {
                 <span
                   key={t}
                   style={{
-                    fontSize: "9px",
+                    fontSize: "11px",
                     padding: "2px 6px",
                     border: "1px solid #1c1c1c",
-                    color: "#333",
+                    color: "#444",
                     letterSpacing: "0.08em",
                   }}
                 >
@@ -177,7 +177,7 @@ export default function AwardsPanel() {
               <span
                 key={tag}
                 style={{
-                  fontSize: "10px",
+                  fontSize: "12px",
                   padding: "4px 10px",
                   border: "1px solid #1c1c1c",
                   color: "#555",

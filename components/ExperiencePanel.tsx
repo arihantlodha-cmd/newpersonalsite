@@ -97,7 +97,7 @@ export default function ExperiencePanel() {
               gap: "8px",
             }}
           >
-            <div style={{ color: "#444", fontSize: "10px" }}>{e.date}</div>
+            <div style={{ color: "#555", fontSize: "11px" }}>{e.date}</div>
             <div>
               <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "3px" }}>
                 {e.active && (
@@ -113,14 +113,14 @@ export default function ExperiencePanel() {
                     }}
                   />
                 )}
-                <span style={{ color: "#d8d8d8", fontWeight: "500", fontSize: "12px" }}>{e.role}</span>
+                <span style={{ color: "#d8d8d8", fontWeight: "500", fontSize: "14px" }}>{e.role}</span>
               </div>
-              <div style={{ color: "var(--orange)", fontSize: "11px", marginBottom: "4px" }}>
+              <div style={{ color: "var(--orange)", fontSize: "13px", marginBottom: "4px" }}>
                 {e.company}
               </div>
-              <div style={{ color: "#444", fontSize: "10px", fontStyle: "italic" }}>{e.note}</div>
+              <div style={{ color: "#666", fontSize: "12px", fontStyle: "italic" }}>{e.note}</div>
             </div>
-            <div style={{ color: "#444", fontSize: "10px" }}>{e.location}</div>
+            <div style={{ color: "#555", fontSize: "11px" }}>{e.location}</div>
           </div>
         ))}
       </div>
@@ -141,17 +141,17 @@ export default function ExperiencePanel() {
               borderBottom: "1px solid #111",
             }}
           >
-            <div style={{ color: "#333", fontSize: "9px", letterSpacing: "0.1em", marginBottom: "6px" }}>
+            <div style={{ color: "#444", fontSize: "11px", letterSpacing: "0.1em", marginBottom: "6px" }}>
               {e.date}
             </div>
-            <div style={{ color: "var(--orange)", fontSize: "12px", fontWeight: "600", marginBottom: "4px" }}>
+            <div style={{ color: "var(--orange)", fontSize: "14px", fontWeight: "600", marginBottom: "4px" }}>
               {e.institution}
             </div>
-            <div style={{ color: "#888", fontSize: "11px", marginBottom: "8px" }}>{e.program}</div>
+            <div style={{ color: "#888", fontSize: "13px", marginBottom: "8px" }}>{e.program}</div>
             <div
               style={{
-                color: "#555",
-                fontSize: "10px",
+                color: "#666",
+                fontSize: "12px",
                 fontStyle: "italic",
                 borderLeft: "2px solid #1c1c1c",
                 paddingLeft: "8px",
@@ -181,7 +181,7 @@ export default function ExperiencePanel() {
                   justifyContent: "space-between",
                   marginBottom: "4px",
                   color: "#666",
-                  fontSize: "10px",
+                  fontSize: "12px",
                 }}
               >
                 <span>{s.name}</span>
