@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 const keys = [
   { key: "F1", label: "OVERVIEW", href: "#overview" },
   { key: "F2", label: "EXPERIENCE", href: "#experience" },
@@ -104,6 +106,27 @@ export default function NavBar() {
         />
         <span style={{ color: "#555", fontSize: "10px" }}>BUILDING</span>
       </div>
+
+      {/* Theme switcher */}
+      <Link
+        href="/desktop"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          padding: "0 14px",
+          borderLeft: "1px solid #1c1c1c",
+          color: "#444",
+          fontSize: "10px",
+          textDecoration: "none",
+          letterSpacing: "0.08em",
+          transition: "color 0.15s",
+          height: "100%",
+        }}
+        onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "var(--orange)"; }}
+        onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#444"; }}
+      >
+        ⊞ DESKTOP
+      </Link>
     </div>
   );
 }
